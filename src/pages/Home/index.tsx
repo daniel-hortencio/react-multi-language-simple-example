@@ -1,20 +1,13 @@
 import { SiStyledComponents, SiReact, SiTypescript } from "react-icons/si";
 import { HomePageTranslations } from "./translations";
-import { useLanguage } from "../../hooks/LanguageProvider";
 
 import { GetTextTranslated } from "../../utils/getTextTranslated";
 
 import * as S from "./styles";
 
-import {
-  LinkToGithub,
-  ContactMe,
-  LanguageToggle,
-} from "../../components/Buttons";
+import { LinkToGithub, LanguageToggle } from "../../components/Buttons";
 
 const App = () => {
-  const { selectedLanguage } = useLanguage();
-
   const usedTechnologies = [
     { icon: <SiReact size={32} />, legend: "React" },
     { icon: <SiTypescript size={32} />, legend: "Typescript" },

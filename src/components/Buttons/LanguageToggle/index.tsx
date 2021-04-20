@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { IoLanguage, IoClose } from "react-icons/io5";
 import { IOptionLanguage } from "../../../hooks/LanguageProvider/types";
 import { useLanguage } from "../../../hooks/LanguageProvider";
@@ -11,7 +11,7 @@ import { LanguageToggleTranslations } from "./translations";
 import { GetTextTranslated } from "../../../utils/getTextTranslated";
 
 export const LanguageToggle = () => {
-  const { selectedLanguage, setSelectedLanguage } = useLanguage();
+  const { setSelectedLanguage } = useLanguage();
 
   const [isOpen, setIsOpen] = useState(false);
 

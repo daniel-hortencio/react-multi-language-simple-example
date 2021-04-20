@@ -1,4 +1,4 @@
-export default {
+const theme = {
     breakpoints: {
         tablet: "960px",
         desktop: "1360px",
@@ -12,3 +12,5 @@ export default {
         black: '#222222',
     },
 }
+
+export default theme

@@ -7,7 +7,10 @@ export const GetTextTranslated = (page: Array<Object>, element: string) => {
     if (translation.value === selectedLanguage.value) {
       return translation[element];
     }
-  });
+    return null;
+  })[0];
+
+  console.log(translatedElement);
 
   return translatedElement;
 };
