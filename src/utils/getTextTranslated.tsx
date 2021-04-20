@@ -8,9 +8,7 @@ export const GetTextTranslated = (page: Array<Object>, element: string) => {
       return translation[element];
     }
     return null;
-  })[0];
-
-  console.log(translatedElement);
+  });
 
   return translatedElement;
 };
