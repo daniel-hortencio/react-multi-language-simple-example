@@ -7,7 +7,6 @@ interface IHomePageTranslations extends IOptionLanguage {
   motivation: string;
   motivationText: string;
   techologies: string;
-  buttonGithub: string;
   developedBy: string;
   lastUpdate: string;
 }
@@ -22,7 +21,6 @@ export const HomePageTranslations: Array<IHomePageTranslations> = [
     motivationText:
       "Num mundo altamente globalizado temos sempre a possibilidade de escalar nosso negócio para além das fronteiras nacionais. Por isso nosso projeto deve estar preparado para ser multi-language. Mas a dúvida que surge é COMO fazer isso. Esse exemplo simples busca documentar a solução para ese problema usando recursos do próprio React. Ao passo que melhores práticas forem descobertas para solucionar o multi-language esse exemplo será refatorado. Por ultimo, mas não menos importante, é que esse exemplo possa dar uma idéia inicial a outros que não sabem por onde começar.",
     techologies: "Tecnologías",
-    buttonGithub: "Ver no github",
     developedBy: `Desenvolvido por ${developerName}`,
     lastUpdate: `Última atualização: ${lastUpdate}`,
   },
@@ -35,7 +33,6 @@ export const HomePageTranslations: Array<IHomePageTranslations> = [
     motivationText:
       "En un mundo altamente globalizado, siempre tenemos la posibilidad de escalar nuestro negocio más allá de las fronteras nacionales. Por eso nuestro proyecto debe estar preparado para ser multilingüe. Pero la pregunta que surge es CÓMO hacerlo. Este sencillo ejemplo busca documentar la solución a este problema utilizando los propios recursos de React. A medida que se descubran las mejores prácticas para resolver varios idiomas, este ejemplo se refactorizará. Por último, pero no menos importante, este ejemplo puede dar una idea inicial a otras personas que no saben por dónde empezar.",
     techologies: "Tecnologias",
-    buttonGithub: "Ver en github",
     developedBy: `Desarrollado por ${developerName}`,
     lastUpdate: `Última actualización: ${lastUpdate}`,
   },
@@ -48,7 +45,6 @@ export const HomePageTranslations: Array<IHomePageTranslations> = [
     motivationText:
       "In a highly globalized world, we always have the possibility to scale our business beyond national borders. That is why our project must be prepared to be multi-language. But the question that arises is HOW to do it. This simple example seeks to document the solution to this problem using React's own resources. As best practices are discovered for solving multi-language, this example will be refactored. Last but not least, this example can give an initial idea to others who don't know where to start.",
     techologies: "Tecnologias",
-    buttonGithub: "View on github",
     developedBy: `Developed by ${developerName}`,
     lastUpdate: `Last updated: ${lastUpdate}`,
   },

@@ -6,7 +6,7 @@ export const Link = styled.a`
     background-color: ${props => props.theme.colors.black};
     display: flex;
     align-items: center;
-    max-width: 11rem;
+    max-width: 12rem;
     color: ${props => props.theme.colors.white};
     transition: opacity 0.3s;
 
