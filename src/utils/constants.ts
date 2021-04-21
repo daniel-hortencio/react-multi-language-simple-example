@@ -1,2 +1,2 @@
 export const developerName = "Daniel Hortencio";
-export const lastUpdate = "20/04/21";
+export const lastUpdate = "21/04/21";

@@ -9,13 +9,13 @@ export const ToggleContainer = styled.div<IIsOpen>`
     max-width: 20rem;
     transition: all 0.3s;
     position: relative;  
-    z-index: 20;
+    z-index: 20;              
 
     ${props => !props.isOpen
         && css`
             :hover, :hover * {
                 color: ${props => props.theme.colors.primary};
-                border-color: ${props => props.theme.colors.primary};
+                border-color: ${props => props.theme.colors.primary};               
             }  
         `
     }     
@@ -40,9 +40,11 @@ export const Toggle = styled.button<IButtonDisabled>`
     left: 0;
     padding: 0.5rem 1rem;
     z-index: 2;
+    transition: all 0.3s;
 
     & svg {
         margin-right: 1rem;
+        transition: all 0.3s;
     }  
 
     ${props => props.disabled && css`
@@ -84,9 +86,7 @@ export const LanguagesOptions = styled.div<ILanguageOptions>`
     border-radius: 0.5rem;
     background: ${props => props.theme.colors.white};
     transition: all 0.3s;
-    overflow: hidden;    
-
-    
+    overflow: hidden;      
 
     ${props => props.isOpen
         ? css`
@@ -99,7 +99,9 @@ export const LanguagesOptions = styled.div<ILanguageOptions>`
         : css`
             height: 100%;
             padding: 2.5rem 1rem 0 1rem;
-            border: solid 2px #ddd; 
+            @media(min-width: ${props => props.theme.breakpoints.tablet}){
+                border: solid 2px #ddd; 
+            }            
         `
     }
 

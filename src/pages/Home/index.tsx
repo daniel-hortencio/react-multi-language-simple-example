@@ -7,6 +7,8 @@ import * as S from "./styles";
 
 import { LinkToGithub, LanguageToggle } from "../../components/Buttons";
 
+import Illustration from "../../assets/images/illustration.svg";
+
 const App = () => {
   const usedTechnologies = [
     { icon: <SiReact size={32} />, legend: "React" },
@@ -24,6 +26,10 @@ const App = () => {
           <section>
             <h1>{GetTextTranslated(HomePageTranslations, "title")}</h1>
             <p>{GetTextTranslated(HomePageTranslations, "description")}</p>
+
+            <S.ImageContainer>
+              <img src={Illustration} alt="Ilustração" />
+            </S.ImageContainer>
 
             <h2>{GetTextTranslated(HomePageTranslations, "motivation")}</h2>
             <p>{GetTextTranslated(HomePageTranslations, "motivationText")}</p>
